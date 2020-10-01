@@ -1,21 +1,26 @@
+body {
+    overflow: hidden;
+}
+
 .main {
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 #calculator {
     position: relative;
     background: azure;
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 410px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns:100px 100px 100px 100px;
     grid-template-rows:100px 100px 100px 100px 100px;
-    grid-template-areas:button1 . button2 . button3 . button4 . button5 . button6 . button7 . button8 . button9 . button0 . button+ . button- . button = . button / . buttonC . button *.;
+    grid-template-areas: button1 . button2 . button3 . button4 . button5 . button6 . button7 . button8 . button9 . button0 . button+ . button- . button= . button/ . buttonC . button* .;
 }
 .button {
     background: gold;
